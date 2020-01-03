@@ -24,7 +24,7 @@ public class AboutUsActivity extends AppCompatActivity {
         TextView app = findViewById(R.id.abt_app_tv);
         TextView link = findViewById(R.id.git_link);
         TextView dev = findViewById(R.id.abt_dev_tv);
-        String hyperlink = "<a href ='https://github.com/Sarang0608/NotesApp.git'>Github</a>";
+        String hyperlink = "<a href ='https://github.com/Sarang0608/Notes.git'>Github</a>";
 
         app.setText("This App was developed by 'Runtime Terror'. This app stores the notes which are input by the user into a FirebaseFirestore database. The dependencies used in this app are: FirebaseAuthUI(provides the Login UI),FirebaseFirestore(the database which stores all the notes), Glide(downloads the user profile picture from their Google Account), CircularImageView(provides the circular image view in the profile picture)");
         link.setClickable(true);
