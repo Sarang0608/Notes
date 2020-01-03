@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:text="Note Header"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/note_header_tv"/>
+
+        <Button
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/ic_more_vert_black_24dp"
+            android:id="@+id/menu_btn"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="225sp"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            android:text="Note Body"
+            android:textColor="#000"
+            android:id="@+id/note_body_tv"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/ic_check_green_24dp"
+                    android:id="@+id/note_com_iv" />
+                <ImageView
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/ic_star_border_golden_24dp"
+                    android:id="@+id/note_imp_iv"
+                    android:layout_marginLeft="75sp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12/26/2019"
+                android:id="@+id/note_creation_tv"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:id="@+id/add_notes_toolbar">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
+            android:text="Save"
+            android:textColor="#fff"
+            android:layout_marginLeft="300sp"
+            android:id="@+id/save_btn"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="25sp"
+        android:textStyle="bold"
+        android:hint="The Note Heading....."
+        android:id="@+id/note_header_et"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="325sp"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:hint="The Note Content"
+        android:id="@+id/note_content_et"
+        android:gravity="top"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="210sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mic_image"
+            android:id="@+id/mic_img"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark as Important"
+                android:id="@+id/mark_imp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

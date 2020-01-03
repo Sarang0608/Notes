@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="190dp"
+    android:layout_height="95sp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note Header"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/home_note_header_tv"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="125sp"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            android:text="Note Body"
+            android:maxLines = "3"
+            android:scrollbars="vertical"
+            android:textColor="#000"
+            android:id="@+id/home_note_body_tv"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:src="@drawable/ic_check_green_24dp"
+                    android:id="@+id/home_note_com_iv" />
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:src="@drawable/ic_star_border_golden_24dp"
+                    android:id="@+id/home_note_imp_iv" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12/26/2019"
+                android:id="@+id/home_note_creation_tv"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
