@@ -1,0 +1,2 @@
+# Notes
+DevSoc winter project.
